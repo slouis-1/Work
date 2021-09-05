@@ -44,17 +44,12 @@ h1 {
     width: 85vw;
     color: #DFAB01;
     display: inline-block;
-    box-shadow: 2px 2px 1px 0px #330835;
 }
 
-.card:hover {
-    margin-top: 2px;
-    box-shadow: none;
-}
 
 .clock {
     display: inline;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 2em;
    
 }
@@ -72,14 +67,14 @@ h1 {
 .date {
     display: inline;
     min-width: 162px;
-    font-family: 'Nanum Myeongjo', serif;
+   font-family: 'Work Sans', sans-serif;
     font-size: 2em;
     padding-right: 30px;
 }
 .greet{
     
     display:inline;
-    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 2rem;
      padding-right: 30px;
 }
@@ -89,6 +84,7 @@ h1 {
 <body>
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
 
 <div class="full-table">
   <div class="table-cell">
@@ -137,6 +133,7 @@ if (hrs < 12)
 document.getElementById('greet').innerHTML = greet;
 document.getElementById('hour').innerHTML = hour;
 document.getElementById('min').innerHTML = minutes;
+document.getElementById('min').innerHTML = seconds;    
 }
 
 function twelveHour(hour) {
